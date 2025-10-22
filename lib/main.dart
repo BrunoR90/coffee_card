@@ -1,9 +1,9 @@
-import 'package:coffee_card/home.dart';
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: Sandbox()
+    home: Home()
   ));
 }
 
@@ -17,7 +17,9 @@ class Sandbox extends StatelessWidget {
         title: const Text('Sandbox'),
         backgroundColor: Colors.grey
       ),
-      body: Column(
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
             width: 100,
